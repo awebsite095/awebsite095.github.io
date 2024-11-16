@@ -1,0 +1,76 @@
+/* Reset some default styles */
+* {
+    margin: 2;
+    padding: 2;
+    box-sizing: border-box;
+}
+
+/* Apply a full height background image */
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('ana.jpg'); /* Make sure to have a "birthday-bg.jpg" in your project folder */
+    background-size: auto;
+    background-position: center;
+}
+
+/* Container for centering the content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+/* Style for the greeting text */
+.content {
+    background: rgba(82, 255, 2, 0.5); /* Semi-transparent background for readability */
+    animation: fadeIn 5s ease-out;
+    padding: 40px 60px;
+    border-radius: 15px;
+    color: #fff;
+    max-width: 80%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation effect for the greeting */
+.greeting {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 5s ease-out;
+}
+
+/* Message style */
+.message {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    animation: fadeIn 5s ease-out;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .greeting {
+        font-size: 2.5rem;
+    }
+    
+    .message {
+        font-size: 1.2rem;
+    }
+}
